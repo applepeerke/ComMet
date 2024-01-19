@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e01f9f01-1871-46af-ab42-4e690891d702" name="Default" comment="Version 1.8">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CRiSp_DB/.idea/CRiSp_DB.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessLayer/CsvManager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessLayer/ErrorControl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessLayer/LogManager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessLayer/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/CRiSp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/CRiSp_1.4.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/dbnavigator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../CRiSp/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/CRiSpy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/CsvManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/FilterManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/FindingsManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/Scanner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/SearchPatternManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/BusinessLayer/SessionManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/DataLayer/Const.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/DataLayer/DBInitialize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/DataLayer/DBSetUp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/DataLayer/Model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/DataLayer/SearchPattern.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/Plugins/ExternalLinks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp/App/Version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/BusinessLayer/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/DataLayer/Database/Attribute.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/DataLayer/Database/DBDriver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/DataLayer/Database/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/DataLayer/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/General/Enums.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/General/LogManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/General/Result.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/General/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.1/App/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.2/App/BusinessLayer/ConfigManager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.2/App/BusinessLayer/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.2/App/General/ErrorControl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.2/App/General/user_input.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CRiSp_1.2/App/General/validate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CriSp Testplan.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../CriSp design.docx" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>proj</find>
+      <find>IX_on_Project</find>
+      <find>PJ_Company_name</find>
+      <find>c_FP_Project_name</find>
+      <find>project_nam</find>
+      <find>__get_project_id</find>
+      <find>company</find>
+      <find>project</find>
+      <find>latest_ver</find>
+      <find>self._project_id_fw</find>
+      <find>self._table_name</find>
+      <find>__ini_result</find>
+      <find>does not exist in model</find>
+      <find>ffd_exists</find>
+      <find>_ffd_exists</find>
+      <find>FieldDef</find>
+      <find>Table</find>
+      <find>Status</find>
+      <find>Model</find>
+      <find>NAME</find>
+      <find>AttType</find>
+      <find>),</find>
+      <find>out_path1</find>
+      <find>model</find>
+      <find>table</find>
+      <find>fi_header</find>
+      <find>self.pattern</find>
+      <find>CF_SU</find>
+      <find>table_name</find>
+      <find>Creating</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>category</replace>
+      <replace>target_file</replace>
+      <replace>FW</replace>
+      <replace>FP</replace>
+      <replace>FW_</replace>
+      <replace>FILES_WITH_FINDINGS</replace>
+      <replace>SP_Pattern_name</replace>
+      <replace>insert_att_dict</replace>
+      <replace>double_quote_count</replace>
+      <replace>external_links</replace>
+      <replace>category_type_col</replace>
+      <replace>pattern_name_col</replace>
+      <replace>expectedset</replace>
+      <replace>expected_set</replace>
+      <replace>expected_set_count</replace>
+      <replace>from_table_attributes</replace>
+      <replace>CF_CATEGORY_FRAMEWORKS</replace>
+      <replace>included_file_types</replace>
+      <replace>PJ_Project_name</replace>
+      <replace>base_table_name</replace>
+      <replace>findings_Work_mapping</replace>
+      <replace>design_dir</replace>
+      <replace>_db_create_table_from_model</replace>
+      <replace>fp_row</replace>
+      <replace>_sp_att_dict</replace>
+      <replace>fi_header</replace>
+      <replace>__get_project_id_from_logical_names</replace>
+      <replace>_ffd_exists_in_mem</replace>
+      <replace>,</replace>
+      <replace>file_name</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/UnitTest/UT_450_BusinessRules.py" />
+        <option value="$PROJECT_DIR$/SetUpDB_Persistent.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/SessionManager.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/DBInitialize.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_200_ETL_Findings.py" />
+        <option value="$PROJECT_DIR$/ETL/ETL_Findings.py" />
+        <option value="$PROJECT_DIR$/ETL/ETL_Comparec.py" />
+        <option value="$PROJECT_DIR$/ETL/Etl_Comparec.py" />
+        <option value="$PROJECT_DIR$/ETL_Compare.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_200_ETL_Compare.py" />
+        <option value="$PROJECT_DIR$/ETL/EtlCompare.py" />
+        <option value="$PROJECT_DIR$/ETL/FindingsPersistentManager.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/ConfigManager.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_410_SearchPattern_Specific.py" />
+        <option value="$PROJECT_DIR$/App/General/UserInput.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Database/SQLOperator.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Database/Attribute.py" />
+        <option value="$PROJECT_DIR$/crisp.config" />
+        <option value="$PROJECT_DIR$/ReleaseNotes.txt" />
+        <option value="$PROJECT_DIR$/App/General/validate.py" />
+        <option value="$PROJECT_DIR$/CRiSp.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/DBSetUp.py" />
+        <option value="$PROJECT_DIR$/ETL_Findings.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_200_FindingsPersistent.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Database/DBDriver.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/FindingsPersistentManager.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Mapping.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/FindingsWorkManager.py" />
+        <option value="$PROJECT_DIR$/UnitTest/crisp.config" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_100_CRiSp.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/FilterManager.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/Scanner.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/BusinessRuleManager.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/SearchPatternManager.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_300_Regex.py" />
+        <option value="$PROJECT_DIR$/UnitTest/UT_400_SearchPatterns.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/DataModel/Attribute.py" />
+        <option value="$PROJECT_DIR$/App/Plugins/ExternalLinks.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/CRiSpy.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/CsvManager.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/FindingsManager.py" />
+        <option value="$PROJECT_DIR$/App/BusinessLayer/FrameworkManager.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/SearchPattern.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Model.py" />
+        <option value="$PROJECT_DIR$/App/DataLayer/Const.py" />
+        <option value="$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/ConfigManager.py" />
+        <option value="$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/SessionManager.py" />
+        <option value="$PROJECT_DIR$/../CRiSp_Core/App/DataLayer/Const.py" />
+        <option value="$PROJECT_DIR$/../CRiSp/App/BusinessLayer/ConfigManager.py" />
+        <option value="$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/CRiSpy.py" />
+        <option value="$PROJECT_DIR$/CsvManager.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="72" />
+    <option name="y" value="23" />
+    <option name="width" value="1254" />
+    <option name="height" value="837" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CRiSp_General" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRiSp_General" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CRiSp_General" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CRiSp_General" type="462c0819:PsiDirectoryNode" />
+              <item name="BusinessLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ETL" />
+      <recent name="$PROJECT_DIR$/App/DataLayer" />
+      <recent name="$PROJECT_DIR$/App/BusinessLayer" />
+      <recent name="$PROJECT_DIR$/UnitTest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BusinessLayer" />
+      <recent name="$PROJECT_DIR$/../CRiSp" />
+      <recent name="$PROJECT_DIR$/App/BusinessLayer" />
+      <recent name="$PROJECT_DIR$/App/DataLayer" />
+      <recent name="$PROJECT_DIR$/App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.UT_All">
+    <configuration name="Crisp" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CRiSp.py" />
+      <option name="PARAMETERS" value="-i &quot;$PROJECT_DIR$/../../../Projects/Test projects/Frameworks&quot; -c KPN -v --project RL" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ETL_Findings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ETL_Findings.py" />
+      <option name="PARAMETERS" value="-c kpn -p projectx -a merge -i &quot;$PROJECT_DIR$/../../../Projects/Test projects/Frameworks&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="ETL_Findings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ETL_Findings.py" />
+      <option name="PARAMETERS" value="-a merge -p &quot;Project Y&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_All" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../CRiSp_Core/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_Core" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_000_All.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_CRiSp" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/UT_100_CRiSp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_DBDriver" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/UT_DBDriver.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_DBinitialize_CRiSP" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/UT_SetUpDB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_Regex" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/TestRegex.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_SearchPatterns" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest/UT_SearchPatterns" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/UT_400_SearchPatterns.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="UT_SetupDB" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnitTest/UT_SetUpDB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Unittests in UT_020_DB.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/UnitTest/UT_020_DB.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in UT_100_CRiSp.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../CRiSp_Core/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_100_CRiSp.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="Unittests in UT_200_FindingsPersistent.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/UnitTest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/UnitTest/UT_200_FindingsPersistent.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration default="true" type="OdpsPythonConfigurationType" factoryName="MaxCompute Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="PROJECT_NAME" value="" />
+      <option name="TABLE_NAME" value="" />
+      <option name="TABLE_COLUMNS" value="" />
+      <option name="TABLE_PARTITION" value="" />
+      <option name="MAIN_CLASS" value="" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CRiSp_1.4" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FindString" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list size="12">
+      <item index="0" class="java.lang.String" itemvalue="Python.Crisp" />
+      <item index="1" class="java.lang.String" itemvalue="Python.UT_CRiSp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.UT_DBDriver" />
+      <item index="3" class="java.lang.String" itemvalue="Python.UT_DBinitialize_CRiSP" />
+      <item index="4" class="java.lang.String" itemvalue="Python.UT_SetupDB" />
+      <item index="5" class="java.lang.String" itemvalue="Python.UT_SearchPatterns" />
+      <item index="6" class="java.lang.String" itemvalue="Python.UT_Regex" />
+      <item index="7" class="java.lang.String" itemvalue="Python tests.Unittests in UT_100_CRiSp.py" />
+      <item index="8" class="java.lang.String" itemvalue="Python.UT_All" />
+      <item index="9" class="java.lang.String" itemvalue="Python.ETL_Findings" />
+      <item index="10" class="java.lang.String" itemvalue="Python tests.Unittests in UT_200_FindingsPersistent.py" />
+      <item index="11" class="java.lang.String" itemvalue="Python tests.Unittests in UT_020_DB.py" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.UT_All" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ETL_Findings" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in UT_200_FindingsPersistent.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in UT_020_DB.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ETL_Findings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e01f9f01-1871-46af-ab42-4e690891d702" name="Default" comment="" />
+      <created>1503406882392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503406882392</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Version 1.8">
+      <created>1511775240104</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511775240104</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Version 1.8">
+      <created>1511775454394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511775454394</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 11m 46s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 16m 47s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 17m 06s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 17m 21s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 22m 12s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 22m 13s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 23m 06s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_020_DB_py - 2018.02.09 at 11h 23m 22s.xml">
+      <configuration name="Unittests in UT_020_DB.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_200_FindingsPersistent_py - 2018.02.09 at 11h 33m 12s.xml">
+      <configuration name="Unittests in UT_200_FindingsPersistent.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_UT_200_FindingsPersistent_py - 2018.02.09 at 11h 45m 31s.xml">
+      <configuration name="Unittests in UT_200_FindingsPersistent.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="72" y="23" width="1254" height="837" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.50988466" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2771242" sideWeight="0.4678748" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22089314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37777779" sideWeight="0.4901153" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3137255" sideWeight="0.48352554" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.50988466" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42117646" sideWeight="0.4901153" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3529412" sideWeight="0.4678748" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1840448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24705882" sideWeight="0.48352554" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version 1.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.8" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BusinessLayer/ConfigManager.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/General/Scanner.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/SessionManager.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_400_SearchPatterns.py</url>
+          <line>235</line>
+          <option name="timeStamp" value="1164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_400_SearchPatterns.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="1165" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="1207" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="session.unit_test" language="Python" />
+      </configuration>
+      <configuration name="PythonConfigurationType">
+        <watch expression="pattern_count" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/General/LogManager.py" />
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/UT_450_BusinessRules.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="1598" column="0" lean-forward="false" selection-start-line="1598" selection-start-column="0" selection-end-line="1598" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_410_SearchPattern_Specific.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/General/UserInput.py" />
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/DataModel/SQLOperator.py" />
+    <entry file="file://$PROJECT_DIR$/crisp.config" />
+    <entry file="file://$PROJECT_DIR$/ReleaseNotes.txt" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/General/validate.py" />
+    <entry file="file://$PROJECT_DIR$/UnitTest/UT_010_SetUPDB.py" />
+    <entry file="file://$PROJECT_DIR$/SetUpDB.py" />
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/DBInitialize.py" />
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/DBSetUp.py" />
+    <entry file="file://$PROJECT_DIR$/ETL_Findings.py" />
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="394" column="0" lean-forward="false" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/UT_020_DB.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/Version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/UT_200_FindingsPersistent.py" />
+    <entry file="file://$PROJECT_DIR$/App/BusinessLayer/FindingsPersistentManager.py" />
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/Mapping.py" />
+    <entry file="file://$PROJECT_DIR$/App/BusinessLayer/FindingsWorkManager.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/crisp.config" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_000_All.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/Database/DBDriver.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_100_CRiSp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/BusinessLayer/BusinessRuleManager.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_400_SearchPatterns.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="70" column="55" lean-forward="true" selection-start-line="70" selection-start-column="55" selection-end-line="70" selection-end-column="55" />
+          <folding>
+            <element signature="e#609#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/BusinessRule.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/UnitTest/UT_300_Regex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/DataLayer/DataModel/Attribute.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/Plugins/ExternalLinks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/CsvManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/FilterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/FrameworkManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/Scanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="108" column="8" lean-forward="false" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/SearchPatternManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="137" column="8" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/DataLayer/SearchPattern.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/DataLayer/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="9" lean-forward="false" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/SessionManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="163" column="74" lean-forward="false" selection-start-line="163" selection-start-column="74" selection-end-line="163" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/CRiSp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp/App/BusinessLayer/ConfigManager.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp/App/BusinessLayer/CRiSpy.py" />
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/ConfigManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="42" column="62" lean-forward="false" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/crisp.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/DataLayer/Const.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/FindingsManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CRiSp_Core/App/BusinessLayer/CRiSpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="170" column="33" lean-forward="false" selection-start-line="170" selection-start-column="33" selection-end-line="170" selection-end-column="33" />
+          <folding>
+            <element signature="e#544#609#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessLayer/CsvManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#516#525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

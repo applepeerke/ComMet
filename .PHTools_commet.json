@@ -1,0 +1,14 @@
+{
+    "CF_SETTINGS_PATH": "/Users/peterwerk/Development/Apps/ComMet/ComMet/.PHTools_commet.json",
+    "CF_OUTPUT_BASE_DIR": "/Users/peterwerk/Development/Apps/ComMet/ComMet/Output/",
+    "CF_INPUT_PATH": "",
+    "CF_INPUT_PATHS": "",
+    "CF_INPUT_PATHS_SOPH": "",
+    "CF_DEBUG_METHOD_NAME": "",
+    "CF_FILE_NAME": "",
+    "CF_REPO_DIR": "",
+    "CF_REPO_DIRS": "",
+    "CF_REPO_DIRS_SOPH": "",
+    "CF_LIST_DIFF_ONLY": true,
+    "CF_AUTO_CLOSE_TIME_S": 3
+}

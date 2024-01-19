@@ -1,0 +1,6 @@
+Type;Subtype;Value
+PathPart;Contains;venv
+PathPart;Contains;lib
+PathPart;Contains;test
+FileName;Ignore;__init__.py
+FileName;Ignore;appjar.py
