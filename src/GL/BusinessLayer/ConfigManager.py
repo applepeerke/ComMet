@@ -18,6 +18,7 @@ from src.GL.Const import EMPTY, NONE, APP_NAME
 from src.GL.Functions import list_to_string
 from src.GL.GeneralException import GeneralException
 from src.GL.Validate import normalize_dir, emptyNone
+from appdirs import *
 
 # Settings
 CF_SETTINGS_PATH = 'CF_SETTINGS_PATH'
@@ -76,7 +77,7 @@ configDictTooltip = {
 class Singleton:
     """ ConfigManager """
 
-    class ConfigManager( object ):
+    class ConfigManager(object):
 
         @property
         def config_dict(self):
@@ -97,46 +98,47 @@ class Singleton:
 
         def start_config(self, persist=False):
             self._persist = persist
-            path = str( self.get_path() )
+            path = str(self.get_path())
             if not path:
                 raise GeneralException(f'Configuration could not be initialized. Invalid path "{path}"')
-            self.set_config_item( CF_SETTINGS_PATH, path )
-            if not os.path.exists( path ):
+            self.set_config_item(CF_SETTINGS_PATH, path)
+            if not os.path.exists(path):
                 self.write_config()
-            if os.path.exists( path ):
-                self._config_dict = json.load( open( path, "rb" ) )
+            if os.path.exists(path):
+                self._config_dict = json.load(open(path, "rb"))
             else:
-                raise GeneralException( f'Configuration could not be saved. Path does not exist: "{path}"' )
+                raise GeneralException(f'Configuration could not be saved. Path does not exist: "{path}"')
             return
 
         def write_config(self):
-            json.dump( self._config_dict, open( self.get_path(), "w" ), indent=4 )
+            json.dump(self._config_dict, open(self.get_path(), "w"), indent=4)
 
         def get_config_item(self, key):
-            return self._config_dict.get( key )
+            return self._config_dict.get(key)
 
         def set_config_item(self, key, value, must_exist=True):
             """ If value is a list type, convert comma-separated string to list."""
             if not key or (must_exist and key not in self._config_dict):
                 return
-            if type( configDict[key] ) == list:
+            if type(configDict[key]) == list:
                 self._config_dict[key] = [
-                    emptyNone( item.replace( "\'", EMPTY ).strip() ) for item in list_to_string( value ).split( ',' )]
+                    emptyNone(item.replace("\'", EMPTY).strip()) for item in list_to_string(value).split(',')]
             else:
-                value = normalize_dir( value ) if key.endswith( 'DIR' ) else value
-                self._config_dict[key] = emptyNone( value )
+                value = normalize_dir(value) if key.endswith('DIR') else value
+                self._config_dict[key] = emptyNone(value)
 
         @staticmethod
         def get_config_item_tooltip(key):
-            return configDictTooltip.get( key )
+            return configDictTooltip.get(key)
 
         def get_path(self) -> str:
             """
-            Place "cookie" in ser home dir if persistence asked for or "cookie" is already present there.
+            Place "cookie" in App output dir if persistence asked for or "cookie" is already present there.
             Else place it in the app root.
             """
-            user_path = f'{normalize_dir( os.path.expanduser( "~" ) )}{self._file_name}'
-            return user_path if os.path.isfile( user_path ) or self._persist \
+            dir_name = normalize_dir(user_data_dir(APP_NAME), create=True)
+            user_path = f'{dir_name}{self._file_name}'
+            return user_path if os.path.isfile(user_path) or self._persist \
                 else f'{get_app_root_dir()}{self._file_name}'
 
         @staticmethod
@@ -161,8 +163,8 @@ class Singleton:
 
     def __getattr__(self, attr):
         """ Delegate access to implementation """
-        return getattr( self.__instance, attr )
+        return getattr(self.__instance, attr)
 
     def __setattr__(self, attr, value):
         """ Delegate access to implementation """
-        return setattr( self.__instance, attr, value )
+        return setattr(self.__instance, attr, value)

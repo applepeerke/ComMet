@@ -12,6 +12,8 @@
 
 import datetime
 
+from appdirs import *
+
 from ComMet import get_root_dir, get_app_root_dir
 from src.GL.Const import RESULTS_DIR, BASE_OUTPUT_SUBDIR, EMPTY, APP_NAME
 from src.GL.GeneralException import GeneralException
@@ -131,33 +133,33 @@ class Singleton:
                 return
 
             self._unit_test = unit_test
-            self._output_base_dir = output_dir
+            self._output_base_dir = output_dir or normalize_dir(user_data_dir(APP_NAME), create=True)
 
             # Pgm dir
             root_dir = get_root_dir()
             self._base_dir = get_app_root_dir()
             if not self._base_dir:
                 raise GeneralException(f'{__name__}: No app root dir found.')
-            self._resources_dir = normalize_dir(f'{self._base_dir}resources' )
+            self._resources_dir = normalize_dir(f'{self._base_dir}resources')
             self._images_dir = normalize_dir(f'{self._resources_dir}images')
 
             # Output base dir
             # (Results, database) should be kept outside the program (src) directory
             if not self._output_base_dir or self._output_base_dir in self._base_dir:
-                raise GeneralException(f'{__name__}: Invalid output folder "{self._output_base_dir}"' )
+                raise GeneralException(f'{__name__}: Invalid output folder "{self._output_base_dir}"')
 
             # Database dir
-            self._database_dir = normalize_dir( f'{root_dir}UT' ) if unit_test else \
-                normalize_dir( f'{self._output_base_dir}Data', create=True )
+            self._database_dir = normalize_dir(f'{self._output_base_dir}UT', create=True) if unit_test else \
+                normalize_dir(f'{self._output_base_dir}Data', create=True)
 
             # Output subdir
             subdir = RESULTS_DIR if not unit_test else f'{RESULTS_DIR}_UnitTest'
-            output_subdir = normalize_dir( f'{output_dir}{subdir}', create=True )
+            output_subdir = normalize_dir(f'{self._output_base_dir}{subdir}', create=True)
             if not output_subdir:
                 return
             extra_suffix = f'_{suffix}' if suffix else EMPTY
-            self._suffix = f'{BASE_OUTPUT_SUBDIR}_{datetime.datetime.now().strftime( "%Y%m%d_%H%M%S" )}{extra_suffix}'
-            self._output_dir = normalize_dir( f'{output_subdir}{self._suffix}', create=True )
+            self._suffix = f'{BASE_OUTPUT_SUBDIR}_{datetime.datetime.now().strftime("%Y%m%d_%H%M%S")}{extra_suffix}'
+            self._output_dir = normalize_dir(f'{output_subdir}{self._suffix}', create=True)
             self._isStarted = True
 
     # ---------------------------------------------------------------------------------------------------------------------
@@ -179,8 +181,8 @@ class Singleton:
 
     def __getattr__(self, attr):
         """ Delegate access to implementation """
-        return getattr( self.__instance, attr )
+        return getattr(self.__instance, attr)
 
     def __setattr__(self, attr, value):
         """ Delegate access to implementation """
-        return setattr( self.__instance, attr, value )
+        return setattr(self.__instance, attr, value)

@@ -21,7 +21,7 @@ session = Session()
 CM = ConfigManager()
 
 
-class Controller( object ):
+class Controller(object):
 
     @property
     def Result(self):
@@ -42,24 +42,25 @@ class Controller( object ):
         # Config
         # - Persist your settings (kind of "Cookie")?
         try:
-            path = f'{normalize_dir( os.path.expanduser( "~" ) )}{CM.file_name}'
-            persist = os.path.isfile( path )
-            if not persist and not CM.get_config_item( CF_SETTINGS_PATH ):
-                persist = confirm( f'Your {APP_NAME} settings can be saved (as a kind of cookie) in:\n\n'
-                                   f'  o Folder name: {normalize_dir( os.path.expanduser( "~" ) )}\n'
-                                   f'  o File name: {CM.file_name}\n',
-                                   'Save your settings?' )
+            path = f'{normalize_dir(user_data_dir(APP_NAME), create=True)}{CM.file_name}'
+            persist = os.path.isfile(path)
+            if not persist and not CM.get_config_item(CF_SETTINGS_PATH):
+                persist = confirm(f'Your {APP_NAME} settings will be saved (as a kind of cookie) in:\n\n'
+                                  f'  o Folder name: {user_data_dir(APP_NAME)}\n'
+                                  f'  o File name: {CM.file_name}\n',
+                                  'Save your settings?')
             # - Start
-            CM.start_config( persist )
+            CM.start_config(persist)
 
             # - Output dir MUST exist.
-            self._set_required_config( CF_OUTPUT_BASE_DIR )
+            CM.set_config_item(CF_OUTPUT_BASE_DIR, user_data_dir(APP_NAME))
+            self._set_required_config(CF_OUTPUT_BASE_DIR)
 
         except GeneralException:
             return False
 
         # Session
-        session.set_paths( output_dir=CM.get_config_item( CF_OUTPUT_BASE_DIR ) )
+        session.set_paths(output_dir=CM.get_config_item(CF_OUTPUT_BASE_DIR))
 
         # DB
         if session.has_db:
@@ -72,33 +73,33 @@ class Controller( object ):
     @staticmethod
     def factory_reset(title=CMD_FACTORY_RESET):
         try:
-            if confirm_factory_reset( f'Do you want to reset {APP_NAME}?\n\n'
-                                      f'The configuration will be removed.\n',
-                                      title ):
+            if confirm_factory_reset(f'Do you want to reset {APP_NAME}?\n\n'
+                                     f'The configuration will be removed.\n',
+                                     title):
                 path = CM.get_path()
-                if os.path.isfile( path ):
-                    os.remove( path )
-                    info_box( f'Configuration has been removed.\n'
-                              f'Path was "{path}"\n\n'
-                              f'{APP_NAME} shall exit.' )
-                    sys.exit( 0 )
+                if os.path.isfile(path):
+                    os.remove(path)
+                    info_box(f'Configuration has been removed.\n'
+                             f'Path was "{path}"\n\n'
+                             f'{APP_NAME} shall exit.')
+                    sys.exit(0)
                 else:
-                    info_box( f'Configuration was not removed. It was not found in "{path}"' )
+                    info_box(f'Configuration was not removed. It was not found in "{path}"')
         except Exception as e:
-            print( str( e ) )
-            sys.exit( 0 )
+            print(str(e))
+            sys.exit(0)
 
     def _set_required_config(self, config_item):
         self._made_changes = False
-        dir_name = CM.get_config_item( config_item )
-        if not dir_name or not os.path.isdir( dir_name ):
-            InputBox().set_folder_in_config( config_item )
+        dir_name = CM.get_config_item(config_item)
+        if not dir_name or not os.path.isdir(dir_name):
+            InputBox().set_folder_in_config(config_item)
             self._made_changes = True
         # Retry
-        dir_name = CM.get_config_item( config_item )
-        if not dir_name or not os.path.isdir( dir_name ):
+        dir_name = CM.get_config_item(config_item)
+        if not dir_name or not os.path.isdir(dir_name):
             raise GeneralException(
-                f'Required configuration item "{config_desc_dict.get( config_item )}" could not be set.' )
+                f'Required configuration item "{config_desc_dict.get(config_item)}" could not be set.')
 
     def _start_db(self):
         self._result = Result()
@@ -109,17 +110,17 @@ class Controller( object ):
         self._check_DB()
 
         if not self._result.OK:
-            if confirmed( self._result ):  # Rebuild db confirmed?
+            if confirmed(self._result):  # Rebuild db confirmed?
                 self._check_DB()
                 if not self._result.OK:
                     return
 
         from src.UI.DataDriver import DataDriver
-        self._data_driver = DataDriver( session.db )
+        self._data_driver = DataDriver(session.db)
 
     def _check_DB(self):
         if not session.has_db:
-            self._result = Result( ResultCode.Ok, 'DB is not supported.' )
+            self._result = Result(ResultCode.Ok, 'DB is not supported.')
             return
 
         from src.DL.DBInitialize import DBInitialize
@@ -127,23 +128,23 @@ class Controller( object ):
         code = ResultCode.Ok
         dbInit = DBInitialize()
         if not dbInit.connect():
-            self._result = Result( ResultCode.Error, messages=dbInit.messages )
+            self._result = Result(ResultCode.Error, messages=dbInit.messages)
             return
 
         # b. Consistent? Then ok.
         if dbInit.is_consistent():
-            self._result = Result( code, 'DBDriver is consistent.' )
+            self._result = Result(code, 'DBDriver is consistent.')
             return
 
         # c. Show the error messages and ask for Rebuild.
         code = ResultCode.Error
-        error_text = '\n'.join( str( m ) for m in dbInit.messages )
-        if message_box( error_text, cont_text='Force rebuild', title=Q_DATABASE_CORRUPT ):
+        error_text = '\n'.join(str(m) for m in dbInit.messages)
+        if message_box(error_text, cont_text='Force rebuild', title=Q_DATABASE_CORRUPT):
             # yes, rebuild and recheck consistency.
-            if dbInit.is_consistent( force=True ):
+            if dbInit.is_consistent(force=True):
                 code = ResultCode.Ok
             # self._result = Result( code, text=title, messages='\n'.join( str( m ) for m in dbInit.messages ) )
-            self._result = Result( code, text='DBDriver rebuild result', messages=dbInit.messages )
+            self._result = Result(code, text='DBDriver rebuild result', messages=dbInit.messages)
 
     """
     Run
@@ -154,27 +155,27 @@ class Controller( object ):
         CM.write_config()
 
     def run(self):
-        kwargs = dict( output_dir=get_setting( CF_OUTPUT_BASE_DIR ), )
-        session.debug_method_name = get_setting( CF_DEBUG_METHOD_NAME )
+        kwargs = dict(output_dir=get_setting(CF_OUTPUT_BASE_DIR), )
+        session.debug_method_name = get_setting(CF_DEBUG_METHOD_NAME)
 
         try:
-            commet = ComMetpy( **kwargs )
+            commet = ComMetpy(**kwargs)
             self._result = commet.start()
             self._completion()
             if self._result.OK and session.debug_method_name:
                 self._result = DebugManager().evaluate_first_3_methods()
 
         except SystemExit as e:
-            message_box( e, severity=MessageSeverity.Error )
+            message_box(e, severity=MessageSeverity.Error)
 
         self.save_config()
 
     def update_repo_paths_soph(self, window, M):
         # Combobox
-        value = self._CmpM.repo_dirs_sophisticated[0] if len( self._CmpM.repo_dirs_sophisticated ) > 0 else EMPTY
-        window[M.key_of( CF_REPO_DIRS_SOPH )].update( value=value, values=self._CmpM.repo_dirs_sophisticated )
+        value = self._CmpM.repo_dirs_sophisticated[0] if len(self._CmpM.repo_dirs_sophisticated) > 0 else EMPTY
+        window[M.key_of(CF_REPO_DIRS_SOPH)].update(value=value, values=self._CmpM.repo_dirs_sophisticated)
         # Config
-        CM.set_config_item( CF_REPO_DIRS_SOPH, self._CmpM.repo_dirs_sophisticated )
+        CM.set_config_item(CF_REPO_DIRS_SOPH, self._CmpM.repo_dirs_sophisticated)
 
     """
     Maintain paths
@@ -182,13 +183,13 @@ class Controller( object ):
 
     def _valid_input(self) -> bool:
         self._result = Result()
-        file_name = get_setting( CF_FILE_NAME )
+        file_name = get_setting(CF_FILE_NAME)
         if not file_name:
-            self._result = Result( ResultCode.Error, text='File name is required.' )
+            self._result = Result(ResultCode.Error, text='File name is required.')
             return False
-        base_dir = get_setting( CF_REPO_DIR )
+        base_dir = get_setting(CF_REPO_DIR)
         if not base_dir:
-            self._result = Result( ResultCode.Error, text='Repository directory is empty.' )
+            self._result = Result(ResultCode.Error, text='Repository directory is empty.')
             return False
         return True
 
@@ -196,18 +197,18 @@ class Controller( object ):
     def add_repo_dir(self):
         if not self._valid_input():
             return
-        self._result = self._CmpM.add_repo_dir( get_setting( CF_REPO_DIR ) )
+        self._result = self._CmpM.add_repo_dir(get_setting(CF_REPO_DIR))
 
     def remove_repo_dir(self):
         if not self._valid_input():
             return
-        self._result = self._CmpM.remove_repo_dir( get_setting( CF_REPO_DIR ) )
+        self._result = self._CmpM.remove_repo_dir(get_setting(CF_REPO_DIR))
 
     def clear_repo_dirs(self):
         self._result = self._CmpM.clear_repo_dirs()
 
     def get_dir_from_soph(self, path_soph):
-        self._result = self._CmpM.get_dir_from_soph( path_soph )
+        self._result = self._CmpM.get_dir_from_soph(path_soph)
 
     # Compare
     # def add_compare_path(self, compare_manager: CompareManager):
@@ -223,5 +224,5 @@ class Controller( object ):
         if not self._result.OK:
             self._messages = self._result.messages or [self._result.text]
         elif not self._result.text:
-            self._result = Result( text=DONE )
+            self._result = Result(text=DONE)
         return self._messages
