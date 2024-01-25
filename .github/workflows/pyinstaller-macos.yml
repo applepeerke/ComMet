@@ -1,4 +1,4 @@
-name: Build EXE on Push
+name: Build APP on Push
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -22,10 +22,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build application
-        run: pyinstaller Geldmaatje.py --onefile --windowed  --clean --noconfirm -i src\logo.ico --add-data resources:resources
+        run: pyinstaller Commet.py --onefile --windowed  --clean --noconfirm -i src\logo.icns --add-data resources:resources
 
-      - name: Upload EXE
+      - name: Upload APP
         uses: actions/upload-artifact@v2
         with:
-          name: Geldmaatje-Windows
-          path: dist/*.exe
+          name: Commet-MacOs
+          path: dist/*.app
