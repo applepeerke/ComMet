@@ -11,9 +11,9 @@ CMD_DB_ACTION_PARAMETERS = ' Parameters '
 CMD_START = f' Compare '
 CMD_OK = ' OK '
 
-CMD_ADD_REPO = ' Add repo'
-CMD_DELETE_REPO = ' Delete repo '
-CMD_CLEAR_REPO = ' Clear repo'
+CMD_ADD_REPO = ' + '
+CMD_DELETE_REPO = ' - '
+CMD_CLEAR_REPO = ' 0 '
 
 CMD_ADD_FILE_NAME = ' Add '
 CMD_DELETE_FILE_NAME = ' Delete '

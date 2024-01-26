@@ -18,7 +18,7 @@ table = Table()
 KEY_DELIMITER = '|'
 
 # Mnemonics: including CO
-mnemonics = [Mnemonics.RP, Mnemonics.CP, Mnemonics.CO, Mnemonics.MO, Mnemonics.CL, Mnemonics.FU]
+mnemonics = [Mnemonics.RP, Mnemonics.CP, Mnemonics.CO, Mnemonics.MO, Mnemonics.CL, Mnemonics.FU, Mnemonics.SU]
 
 table_codes = {
     Mnemonics.RP: Table.Repositories,
@@ -26,6 +26,7 @@ table_codes = {
     Mnemonics.MO: Table.Modules,
     Mnemonics.CL: Table.Classes,
     Mnemonics.FU: Table.Functions,
+    Mnemonics.SU: Table.Summary
 }
 
 
@@ -43,6 +44,7 @@ class IndexDef(object):
     CL_PK = 'CL_PK'
     FU_PK = 'FU_PK'
     RP_PK = 'RP_PK'
+    SU_PK = 'SU_PK'
 
 
 # Field definition
@@ -88,6 +90,10 @@ class FD( object ):
     FU_LineNo_start = 'LineNoStart'
     FU_LineNo_end = 'LineNoEnd'
     FU_Hash = 'Hash'
+
+    # Summary
+    SU_Count = 'Count'
+    SU_MaxEqual = 'MaxEqual'
 
 
 class Model(object):
@@ -160,6 +166,11 @@ class Model(object):
             11: Att( FD.FU_Hash ),
         }
 
+        self._Summary = {
+            1: Att(FD.FU_FunctionName),
+            2: Att(FD.SU_Count, type=AttType.Int),
+            3: Att(FD.SU_MaxEqual, type=AttType.Int),
+        }
         """
         Database definitions
         """
@@ -177,6 +188,7 @@ class Model(object):
             Table.Classes: self._Classes,
             Table.Functions: self._Functions,
             Table.Repositories: self._Repositories,
+            Table.Summary: self._Summary
         }
 
         self._DB_tables = [
@@ -185,6 +197,7 @@ class Model(object):
             Table.Classes,
             Table.Functions,
             Table.Repositories,
+            Table.Summary
         ]
 
         """
@@ -196,6 +209,7 @@ class Model(object):
             Table.Classes: IndexDef.CL_PK,
             Table.Functions: IndexDef.FU_PK,
             Table.Repositories: IndexDef.RP_PK,
+            Table.Summary: IndexDef.SU_PK,
         }
 
         self._Indexes = {
@@ -248,6 +262,10 @@ class Model(object):
                      FD.FU_FunctionName,
                      ],
             },
+            Table.Summary: {
+                IndexDef.SU_PK:
+                    [FD.FU_FunctionName]
+            }
         }
 
     def is_valid(self) -> bool:

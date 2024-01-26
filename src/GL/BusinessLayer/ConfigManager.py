@@ -55,7 +55,7 @@ configDict = {
 config_desc_dict = {
     CF_SETTINGS_PATH: 'Settings folder',
     CF_DEBUG_METHOD_NAME: 'Debug method name',
-    CF_FILE_NAME: 'File name',
+    CF_FILE_NAME: 'File name (optional)',
     CF_REPO_DIR: 'Repository to compare',
     CF_REPO_DIRS_SOPH: 'Repositories selected',
 
@@ -72,6 +72,10 @@ configDictTooltip = {
     CF_SETTINGS_PATH: 'Settings path. Your user settings can be saved for next time (as a kind of cookie).',
     CF_AUTO_CLOSE_TIME_S: 'Message box auto-close time in seconds after a successful action. 0=Do not auto-close',
 }
+
+
+def get_desc(key):
+    return config_desc_dict.get(key, "")
 
 
 class Singleton:
@@ -137,8 +141,8 @@ class Singleton:
             Else place it in the app root.
             """
             dir_name = normalize_dir(user_data_dir(APP_NAME), create=True)
-            user_path = f'{dir_name}{self._file_name}'
-            return user_path if os.path.isfile(user_path) or self._persist \
+            path = f'{dir_name}{self._file_name}'
+            return path if os.path.isfile(path) or self._persist \
                 else f'{get_app_root_dir()}{self._file_name}'
 
         @staticmethod

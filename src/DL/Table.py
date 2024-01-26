@@ -7,6 +7,7 @@ class Table(object):
     Classes = 'Classes'
     Functions = 'Functions'
     Repositories = 'Repositories'
+    Summary = 'Summary'
 
     table_code = {
         M.CO: Containers,
@@ -14,4 +15,5 @@ class Table(object):
         M.CL: Classes,
         M.FU: Functions,
         M.RP: Repositories,
+        M.SU: Summary,
     }

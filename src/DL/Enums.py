@@ -23,6 +23,7 @@ class Mnemonics( object ):
     FU = 'FU'
     CO = 'CO'
     RP = 'RP'
+    SU = 'SU'
 
 
 class MessageCodes( object ):

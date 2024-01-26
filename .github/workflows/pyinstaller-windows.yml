@@ -1,4 +1,4 @@
-name: Build APP on Push
+name: Build EXE on Push
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -22,10 +22,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build application
-        run: pyinstaller Commet.py --onefile --windowed  --clean --noconfirm -i "src/logo.icns" --add-data resources:resources
-
-      - name: Upload APP
+        run: pyinstaller Commet.py --onefile --windowed  --clean --noconfirm -i src\logo.ico --add-data resources:resources
+      - name: Upload EXE
         uses: actions/upload-artifact@v2
         with:
-          name: Commet-MacOs
-          path: dist/*.app
+          name: Commet-Windows
+          path: dist/*.exe

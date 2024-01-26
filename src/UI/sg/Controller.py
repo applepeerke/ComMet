@@ -1,3 +1,4 @@
+import shutil
 import sys
 
 from src.BL.CompareManager import CompareManager
@@ -71,20 +72,19 @@ class Controller(object):
         return self._result.OK
 
     @staticmethod
-    def factory_reset(title=CMD_FACTORY_RESET):
+    def factory_reset(title=CMD_FACTORY_RESET, text=None):
         try:
-            if confirm_factory_reset(f'Do you want to reset {APP_NAME}?\n\n'
-                                     f'The configuration will be removed.\n',
+            app_dir = normalize_dir(user_data_dir(APP_NAME))
+            prefix = f'{text}\n' if text else EMPTY
+            if confirm_factory_reset(f'{prefix}Do you want to reset {APP_NAME}?\n\n'
+                                     f'The configuration and output will be removed. Folder is\n'
+                                     f'{app_dir}',
                                      title):
-                path = CM.get_path()
-                if os.path.isfile(path):
-                    os.remove(path)
-                    info_box(f'Configuration has been removed.\n'
-                             f'Path was "{path}"\n\n'
-                             f'{APP_NAME} shall exit.')
+                if os.path.isdir(app_dir):
+                    shutil.rmtree(app_dir)
                     sys.exit(0)
                 else:
-                    info_box(f'Configuration was not removed. It was not found in "{path}"')
+                    info_box(f'Configuration and output was not removed. It was not found in "{app_dir}"')
         except Exception as e:
             print(str(e))
             sys.exit(0)
@@ -183,13 +183,9 @@ class Controller(object):
 
     def _valid_input(self) -> bool:
         self._result = Result()
-        file_name = get_setting(CF_FILE_NAME)
-        if not file_name:
-            self._result = Result(ResultCode.Error, text='File name is required.')
-            return False
         base_dir = get_setting(CF_REPO_DIR)
         if not base_dir:
-            self._result = Result(ResultCode.Error, text='Repository directory is empty.')
+            self._result = Result(ResultCode.Error, text=f'{get_desc(CF_REPO_DIR)} is empty.')
             return False
         return True
 
@@ -209,16 +205,6 @@ class Controller(object):
 
     def get_dir_from_soph(self, path_soph):
         self._result = self._CmpM.get_dir_from_soph(path_soph)
-
-    # Compare
-    # def add_compare_path(self, compare_manager: CompareManager):
-    #     self._result = M.add_compare_path( get_setting( CF_INPUT_PATH ) )
-    #
-    # def remove_compare_path(self, compare_manager: CompareManager):
-    #     self._result = M.remove_compare_path( get_setting( CF_INPUT_PATH ) )
-    #
-    # def clear_compare_paths(self, compare_manager: CompareManager):
-    #     self._result = M.clear_compare_paths()
 
     def _completion(self) -> list:
         if not self._result.OK:

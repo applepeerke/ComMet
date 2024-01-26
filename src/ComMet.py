@@ -5,6 +5,7 @@ import PySimpleGUI as sg
 from src.GL.Functions import get_icon
 from src.GL.BusinessLayer.ConfigManager import CF_REPO_DIRS_SOPH, CF_REPO_DIR
 from src.GL.Const import APP_NAME
+from src.GL.GeneralException import GeneralException
 from src.UI.sg.Const import *
 from src.UI.sg.Controller import Controller
 from src.UI.sg.Functions import get_name_from_key, status_message, get_name_from_text
@@ -15,10 +16,14 @@ C = Controller()
 
 
 def start():
-    if C.start():
-        _start_app()
-    else:
-        C.factory_reset(f'{APP_NAME} could not be started.')
+    try:
+        if C.start():
+            _start_app()
+        else:
+            raise GeneralException
+    # Exception handling
+    except (GeneralException, Exception) as e:
+        C.factory_reset(text=f'{APP_NAME} could not be started.\n\nReason: {e}\n')
 
 
 def _start_app():
